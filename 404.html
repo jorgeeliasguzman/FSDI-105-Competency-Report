@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/mystyle.css">
+  <style>
+    * {
+      line-height: 1.2;
+      margin: 0;
+      
+    }
+
+    html {
+      color:whitesmoke;
+      background-image: url("./img/imgPoop.jpeg");
+      background-position: center; 
+      background-size: cover;
+      opacity: 75%;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
+    #notFound{
+      display:inline-block;
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+      border:2px solid gray;
+      width: max-content;
+    }
+
+    body {
+      display: table-cell;
+      margin: 2em auto;
+      position: relative;
+      top: 10%;
+      vertical-align: super;
+    }
+
+    h1 {
+      color: rgb(73, 0, 0);
+      font-size: 4em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 auto;
+      color: black;
+      width: 285px;
+      font-size: 1.5em;
+    }
+
+    @media only screen and (max-width: 280px) {
+
+      body,
+      p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="notFound">
+    <h1>Oops =/</h1>
+    <p>Sorry, but the page you are looking for took a poop.</p>
+  </div>
+</body>
+
+</html>
+<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

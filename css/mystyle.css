@@ -1,0 +1,373 @@
+:root{
+    padding: 0;
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 1024px;
+    align-items: center;
+    justify-content: center;
+}
+html{
+    background-image: url(/img/bg.jpg);
+}
+body{
+    background-color: white;
+    padding: 1rem;
+    margin :0;
+
+}
+/*----- Start Mobile Only CSS-----*/
+.header-container{
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    background-color: plum;
+    box-shadow: 0 2px 15px #aaa;
+    border-radius: 15px;
+    width: 100%;
+    height:200px;
+}
+#services-container{
+    height: 50%;
+}
+.main-heading{
+    display: block;
+    position: relative;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    top: 1rem;
+    background-color:powderblue;
+    height:min-content;
+    padding: 0;
+}
+#home-intro{
+    height: 200px;
+    position: relative;
+    bottom: 0;
+}
+ul.nav{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content:flex-end;
+    text-align: center;
+    border: 3px solid green;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+.nav-item{
+    display: block;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    justify-content:space-between;
+}
+main .container{
+    width:100%;
+    margin-left:auto;
+    margin-right: auto;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+ul li{
+    display: flex;
+    text-align: justify;
+    justify-self: auto;
+}
+
+/*-----End Mobile Only CSS-----*/
+.section-title{
+    width:100%;
+    background-color: burlywood;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    height:4rem;
+    box-shadow: 0 2px 15px #aaa;
+    border-radius: 5px;
+}
+.section-container{
+    height: 600px;
+}
+.section-container #home-intro{
+    height:529px;
+    background-image: url(/img/IMG_0396.JPG);
+    opacity: 50%;
+    background-size: cover;
+
+}
+@media(min-width:768px){
+    #servicesContainer{
+        height: 400px;
+    }
+    #home-intro{
+        height: 200px;
+        position: relative;
+        bottom: 0;
+    }
+    .main-container{
+        width:100%;
+
+    }
+    .main-heading{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        align-self: flex-start;
+        top: 1rem;
+        background-color:powderblue;
+        height:min-content;
+        padding: 0;
+    }
+    
+}
+#pets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap:1rem;
+}
+.pet{
+    border: 1px solid black;
+    background: #ececec;
+}
+.form-control{
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pet{
+    border: 1px solid black;
+    background: #ececec;
+    padding: 1rem;
+}
+.pet h3 button{
+    border:none;
+}
+.pet h3 button:hover{
+    transform: scale(1.1);
+}
+.pet-name{
+    display: flex;
+    justify-content: space-around;
+}
+.hidden .hide{
+    display:none;
+}
+.show{
+    display: initial;
+}
+#map{
+    height: 180px;
+    background-color:green;
+}
+/*----- Main CSS consolidated to 1 page -----*/
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+.hidden, [hidden] {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration:none;
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+   pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+
+  b,  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  /*----- Boilerplate correction -----*/
+  @media (max-width:1200px){
+      .modal-fullscreen-lg-down{
+          width:100vw;
+          max-width:none;
+          height:100%;margin:0
+        }
+        .modal-fullscreen-lg-down .modal-content{
+            height:100%;
+            border:0;
+            border-radius:0
+        }.modal-fullscreen-lg-down .modal-header{
+            border-radius:0}
+            .modal-fullscreen-lg-down .modal-body{
+                overflow-y:auto
+            }.modal-fullscreen-lg-down .modal-footer{
+                border-radius:0
+            }
+        }

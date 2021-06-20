@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Pup and Suds|Register</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+  
+    <!--CSS Sheets-->
+    <link rel="stylesheet" href="css/mystyle.css">
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <header class="header-container">
+      <h1 class="main-heading">The Fashion Pet</h1>
+  
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="register.html" tabindex="-1" aria-disabled="true">Register</a>
+        </li>
+            <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </header>
+  <main class="container">
+    <h2>Register</h2>
+      <p>Register new pets to the system using the following form</p>
+
+      <form action="#">
+          <input type="text" class="form-control" name="petName" id="petName" placeholder="Name">
+          <label for="petName"></label> <br>
+          <select class="form-control" name="type" id="type"><br>
+            <option value="" selected disabled> ------ Select an Option------*</option> <br>
+            <option value="dog">Dog 🐕</option> <br>
+            <option value="cat">Cat 🐈</option> <br>
+            <option value="snake">Snake 🐍</option> <br>
+            <option value="other">Other 🦒 🐅 🦖</option> <br>
+          </select><br>
+          <input type="number" class="form-control" name="petAge" id="petAge" placeholder="Age">
+          <label for="petAge"></label><br>
+          <input type="text" class="form-control" name="petBreed" id="petBreed" placeholder="Breed">
+          <label for="petBreed"></label><br>
+          <input type="text" class="form-control" name="petGender" id="petGender" placeholder="Gender">
+          <label for="petGender"></label><br>
+          <select class="form-control" name="petService" id="petService"><br>
+            <option value="" selected disabled> ------ Select an Option------*</option><br>
+            <option value="hair">Haircut</option><br>
+            <option value="nails">Nail Trim</option><br>
+            <option value="shower">Bath</option><br>
+            <option value="full">Full Service</option>
+          </select><br>
+          <input class="form-control" type="text" name="ownerName" id="ownerName" placeholder="Owner's name">
+          <label for="ownerName"></label><br>
+          <input class="form-control" type="tel" name="contactPhone" id="contactPhone" placeholder="Contact Phone">
+          <label for="contactPhone"></label><br>
+      </form>
+    <button id="register-btn" class="btn btn-warning">Register</button>
+    <div id="alert-box" class="alert alert-success hidden" role="alert">
+      The register was successful!
+    </div>
+
+    <p id="profits"></p>
+
+    <div id="types">
+    </div>
+
+    <h4 id="total-pets"></h4>
+
+    <div id="pets">
+    </div>
+
+    <hr>
+    <label for="search">Pet Search</label>
+    <input type="text" name="search" id="search">
+    <button id="search-btn">Search</button>
+
+    <table class="table">
+        <thead>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Breed</th>
+          <th>Type</th>
+          <th>Service</th>
+          <th>Price</th>
+          <th>Owner Name</th>
+          <th>Contact Phone</th>
+        </thead>
+        <tbody id="petTable">
+        </tbody>
+    </table>
+  </main>
+
+  <!-- Add your site or application content here -->
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="register.js"></script>
+</body>
+
+</html>
